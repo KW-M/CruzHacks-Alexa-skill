@@ -1,0 +1,44 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.d3c3af44-7b03-4d11-ad56-6763629a6a5f",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "arn:aws:lambda:us-east-1:784058225837:function:ask-custom-Disaster_Alexa_Alert-default"
+              }
+            }
+          }
+        }
+      },
+      "in_skill_products": [],
+      "resources": {
+        "manifest": {
+          "eTag": "c54496c708eef49a18b711d52344895d"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "31e468ca5ecc3b00404eabf441dedfd8"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:784058225837:function:ask-custom-Disaster_Alexa_Alert-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-Disaster_Alexa_Alert-default",
+            "handler": "index.handler",
+            "revisionId": "c9a6d78b-a248-40f2-a5de-4e2aa9435120",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
+    }
+  }
+}
